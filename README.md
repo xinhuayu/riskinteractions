@@ -1,4 +1,3 @@
-# riskinteractions
 
 Data and source code for the manuscript "Risk interactions of coronavirus infection across age groups after the peak of COVID-19 epidemic."
 
