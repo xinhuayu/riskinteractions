@@ -17,7 +17,7 @@ library(ggplot2)
 # data source, updated monthly;
 # https://www.kaggle.com/kimjihoo/coronavirusdataset
 
-rootpath = "C:/Users/xinhuayu/Desktop/COVID19/southkorea/"
+rootpath = "C:/.../COVID19/southkorea/"
 
 covid_kr=data.table(read.csv(paste0(rootpath,"TimeAge.csv")))
 
@@ -134,17 +134,6 @@ covid_kr5<-dcast(covid_kr4,case_date~agegroup,value.var = "newcases")
 setnames(covid_kr5,c("0","1","2","3"),c("age10","age30","age50","age60p"))
 
 covid_kr5[]
-
-# library(foreign)
-# plot the epidemic curve in stata;
-# write.dta(covid_kr5,"C:/Users/xinhuayu/Desktop/COVID19/southkorea/covid_kr5.dta")
-
-# library(ggplot2)
-# plot the epidemic curves
-# covid_kr4 %>% 
-#   ggplot( aes(x=date, y=newcases, group=agegroup, color=as.factor(agegroup), linetype=as.factor(agegroup))) +
-#   geom_line()
-
 
 # need to use baysian methods with rstan
 library(rstan)
