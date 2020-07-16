@@ -16,8 +16,8 @@ library(ggplot2)
 
 # data source, updated monthly;
 # https://www.kaggle.com/kimjihoo/coronavirusdataset
-
-rootpath = "C:/Users/xinhuayu/Desktop/COVID19/southkorea/"
+# revise the rootpath for yourself
+rootpath = "C:/.../COVID19/southkorea/"
 
 covid_kr=data.table(read.csv(paste0(rootpath,"TimeAge.csv")))
 
